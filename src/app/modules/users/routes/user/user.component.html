@@ -1,0 +1,9 @@
+<p>user: <strong>{{user?.name}}</strong></p>
+<br>
+<div>
+  <p *ngFor="let post of user?.posts">{{post.title}}</p>
+</div>
+<div>
+  <button (click)="exportCSV()">Export as CSV</button>
+  <button (click)="saveAsImage()">Save as Image</button>
+</div>

@@ -1,0 +1,8 @@
+<p>users-list works!</p>
+<div class="users-list-container">
+  <div class="users-container">
+    <a [routerLink]="'user/' + user.id" *ngFor="let user of stateService.users">
+      <div class="user-item">{{user.name}}</div>
+    </a>
+  </div>
+</div>
